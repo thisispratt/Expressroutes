@@ -1,8 +1,8 @@
 var express = require("express");
 var app = express();
 
+//body parser allows us to extract the data submitted by the user to use it on the server.
 var bodyParser = require("body-parser");
-
 app.use(bodyParser.urlencoded({extended: true}));
 
 var friends =["frendy","trendy","pandey","kritika"];
